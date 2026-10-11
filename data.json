@@ -1,0 +1,2089 @@
+{
+  "schema_version": 1,
+  "label": "盲测聊天 · 原20题 · 第二轮历史联网回放",
+  "mode": "retrospective_online_replay_known_outcomes",
+  "not_a_blind_test": true,
+  "contamination": "答案和第一轮成绩已在此前聊天、审计中可见。当前锁定只证明此后不改概率，不能消除事后选模和结果记忆；不属于严格盲测。",
+  "method": "单个AI研究者对截止日前官方资料作结构化情景判断；概率由已公开的主观参数机械汇总。",
+  "calibration": "情景权重、均值、误差宽度没有训练或样本外校准；没有独立专家权重或极端化。",
+  "recorded_at": "2026-10-10T15:12:44.577414+00:00",
+  "summary": {
+    "all": {
+      "round1_probability": {
+        "n": 20,
+        "brier": 0.18158706487540793,
+        "accuracy": 0.7,
+        "correct": 14,
+        "logloss": 0.5224740379248827
+      },
+      "round2_probability": {
+        "n": 20,
+        "brier": 0.155830622807518,
+        "accuracy": 0.8,
+        "correct": 16,
+        "logloss": 0.46976848170112234
+      },
+      "market_probability": {
+        "n": 20,
+        "brier": 0.18022875,
+        "accuracy": 0.7,
+        "correct": 14,
+        "logloss": 0.5340188344463265
+      },
+      "always_no_accuracy": 0.75
+    },
+    "Polymarket": {
+      "round1_probability": {
+        "n": 10,
+        "brier": 0.19682411435905806,
+        "accuracy": 0.6,
+        "correct": 6,
+        "logloss": 0.5501027430983748
+      },
+      "round2_probability": {
+        "n": 10,
+        "brier": 0.09543782527343912,
+        "accuracy": 0.9,
+        "correct": 9,
+        "logloss": 0.32426803877945115
+      },
+      "market_probability": {
+        "n": 10,
+        "brier": 0.163375,
+        "accuracy": 0.7,
+        "correct": 7,
+        "logloss": 0.49173505898532
+      },
+      "always_no_accuracy": 0.8
+    },
+    "Kalshi": {
+      "round1_probability": {
+        "n": 10,
+        "brier": 0.16635001539175784,
+        "accuracy": 0.8,
+        "correct": 8,
+        "logloss": 0.4948453327513905
+      },
+      "round2_probability": {
+        "n": 10,
+        "brier": 0.21622342034159686,
+        "accuracy": 0.7,
+        "correct": 7,
+        "logloss": 0.6152689246227935
+      },
+      "market_probability": {
+        "n": 10,
+        "brier": 0.1970825,
+        "accuracy": 0.7,
+        "correct": 7,
+        "logloss": 0.5763026099073328
+      },
+      "always_no_accuracy": 0.7
+    }
+  },
+  "original_target_clusters": 12,
+  "underlying_event_groups": 8,
+  "group_scores": {
+    "CPI_RELEASE_2026-06": {
+      "round1_probability": 0.04802091058646232,
+      "round2_probability": 0.08435565150598666,
+      "market_probability": 0.11696666666666668
+    },
+    "CPI_RELEASE_2026-07": {
+      "round1_probability": 0.10808240143321524,
+      "round2_probability": 0.17961709631761288,
+      "market_probability": 0.2618875
+    },
+    "CPI_RELEASE_2026-08": {
+      "round1_probability": 0.4196985104189297,
+      "round2_probability": 0.17989975347793946,
+      "market_probability": 0.09932500000000001
+    },
+    "NFP-2026-06": {
+      "round1_probability": 0.05876448055271808,
+      "round2_probability": 0.10988174984479486,
+      "market_probability": 0.1681
+    },
+    "NFP-2026-07": {
+      "round1_probability": 0.05893721477249289,
+      "round2_probability": 0.11351842536651771,
+      "market_probability": 0.17305
+    },
+    "NFP-2026-08": {
+      "round1_probability": 0.2773884802518841,
+      "round2_probability": 0.16182877706141768,
+      "market_probability": 0.32364999999999994
+    },
+    "GDP-2026-Q2": {
+      "round1_probability": 0.20467608754236696,
+      "round2_probability": 0.17653497395236506,
+      "market_probability": 0.1514125
+    },
+    "FED-2026-07": {
+      "round1_probability": 0.17702239210126805,
+      "round2_probability": 0.30195025,
+      "market_probability": 0.17640000000000003
+    }
+  },
+  "equally_weighted_group_brier": {
+    "round1_probability": 0.16907380970741717,
+    "round2_probability": 0.16344833469082928,
+    "market_probability": 0.18384895833333334
+  },
+  "group_bootstrap_market_minus_round2_95pct": [
+    -0.033982087813988635,
+    0.08094664268758242
+  ],
+  "bootstrap_caveat": "按8个发布事件组重采样，仅检查样本波动；不能消除已知答案和事后选模偏差，不是无偏技能估计。",
+  "benchmark_caveat": "沿用第一轮开盘日UTC日末价；预测资料截断在当天00:00，市场有额外一天信息。部分报价无成交、过宽或陈旧；无法构造未开市时的同时间价格。",
+  "profit": null,
+  "profit_note": "没有历史可执行双边盘口、完整费用或预先固定成交策略，不计算虚构交易盈利。",
+  "prediction_sha256": "8dffcca5dc0a38431518be638aed7aa8fdc619b2a128274f815e2183586eb8a5",
+  "original_files_unchanged": true,
+  "rows": [
+    {
+      "exam_id": "P01",
+      "platform": "Polymarket",
+      "market_id": "2491388",
+      "question": "2026年6月 CPI 环比恰为0.6%？",
+      "cluster": "CPI-2026-06",
+      "information_cutoff": "2026-06-10T00:00:00Z",
+      "rules": "This is a market about the one-month percent change in the seasonally adjusted Consumer Price Index for All Urban Consumers (CPI-U) published by the Bureau of Labor Statistics (BLS).\n\nThis market will resolve to the one-month percent change in the seasonally adjusted Consumer Price Index for All Urban Consumers (CPI-U) in June 2026 according to the monthly BLS report.\n\nThe resolution source for this market will be the BLS Consumer Price Index report released for June 2026 (https://www.bls.gov/bls/news-release/cpi.htm), currently scheduled to be released on July 14, 2026, at 8:30 AM ET. Resolution of this market will take place upon release of the aforementioned data.\n\nNote: the resolution source for this market will be the official monthly Consumer Price Index for All Urban Consumers (CPI-U) which BLS reports to one decimal point (e.g. 0.4%). Thus, this is the level of precision that will be used when resolving the market.\n\nIf the BLS does not release the relevant figures on the scheduled date, this market may remain open up until the scheduled release time of the next CPI report (https://www.bls.gov/schedule). If the information is not released by that time, this market will resolve according to the figures of the most recent previous month with available data.",
+      "url": "https://polymarket.com/event/june-inflation-us-monthly-20260610151033433/will-monthly-inflation-increase-by-0pt6-in-june-20260610151034040",
+      "latent_lower": 0.55,
+      "latent_upper": 0.65,
+      "round1_probability": 0.1974126513658474,
+      "round2_probability": 0.10892091228897191,
+      "delta": -0.08849173907687549,
+      "sources": [
+        {
+          "id": "cpi_apr",
+          "url": "https://www.bls.gov/news.release/archives/cpi_05122026.htm",
+          "published_on": "2026-05-12",
+          "available_at": "2026-05-12T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "4月总体0.6%、核心0.4%、住房0.6%；能源贡献超过40%；同比3.8%。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "steo_jun",
+          "url": "https://www.eia.gov/outlooks/steo/archives/jun26.pdf",
+          "published_on": "2026-06-09",
+          "available_at": "2026-06-09T16:15:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "预计6、7月Brent约105美元；5月均价107美元，较4月下跌10美元；假设海峡近期开通仍有限，能源涨跌两种路径均可能。",
+          "timestamp_basis": "报告确认发布日期；按官方通常12:00—12:15美东发布时间窗口的末端推定，非当日秒级发布证明。"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          0.3,
+          0.2,
+          0.3,
+          0.9,
+          0.6
+        ],
+        "n": 5,
+        "hits": 1,
+        "empirical_rate": 0.2,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "高通胀持续",
+          "weight": 0.55,
+          "mean": 0.45,
+          "sd": 0.25,
+          "probability_yes": 0.13272285980627918,
+          "weighted_probability": 0.07299757289345356
+        },
+        {
+          "label": "供应冲击加深",
+          "weight": 0.25,
+          "mean": 0.75,
+          "sd": 0.3,
+          "probability_yes": 0.11694880263484075,
+          "weighted_probability": 0.02923720065871019
+        },
+        {
+          "label": "能源回落",
+          "weight": 0.2,
+          "mean": 0.1,
+          "sd": 0.3,
+          "probability_yes": 0.033430693684040835,
+          "weighted_probability": 0.006686138736808168
+        }
+      ],
+      "reasoning": "4月核心和住房偏高，能源贡献大；6月EIA同时显示油价5月已回落，但预期供应仍受限。分布需要两侧尾部，不能把0.6%当确定落点。",
+      "against_yes": "精确0.6%只有0.1个百分点宽，波动增大会降低命中率。",
+      "against_no": "供应约束和住房粘性可能把总体维持在0.6%附近。",
+      "update_reason": "保留偏高通胀中心，扩宽能源情景；第一轮固定sigma无法表达供应风险。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.23,
+      "price_timestamp": "2026-06-10T23:59:04+00:00",
+      "price_bid": null,
+      "price_ask": null,
+      "price_kind": "开放日UTC日末：最后一条历史图表价格，非已核实成交/可执行报价",
+      "quality_flags": [
+        "历史图表价格；未核验当时买卖价差和成交"
+      ],
+      "settled_at": "2026-07-14 14:34:38+00",
+      "underlying_event": "CPI_RELEASE_2026-06",
+      "opening_day_traded_volume": null,
+      "endday_price_age_minutes": 0.9166666666666666,
+      "losses": {
+        "round1_probability": 0.03897175491929361,
+        "round2_probability": 0.011863765133861913,
+        "market_probability": 0.0529
+      }
+    },
+    {
+      "exam_id": "P02",
+      "platform": "Polymarket",
+      "market_id": "2925106",
+      "question": "2026年7月 CPI 环比至少0.1%？",
+      "cluster": "CPI-2026-07",
+      "information_cutoff": "2026-07-14T00:00:00Z",
+      "rules": "This is a market about the one-month percent change in the seasonally adjusted Consumer Price Index for All Urban Consumers (CPI-U) published by the Bureau of Labor Statistics (BLS).\n\nThis market will resolve to the one-month percent change in the seasonally adjusted Consumer Price Index for All Urban Consumers (CPI-U) in July 2026 according to the monthly BLS report.\n\nThe resolution source for this market will be the BLS Consumer Price Index report released for July 2026 (https://www.bls.gov/bls/news-release/cpi.htm), currently scheduled to be released on August 12, 2026, at 8:30 AM ET. Resolution of this market will take place upon release of the aforementioned data.\n\nNote: the resolution source for this market will be the official monthly Consumer Price Index for All Urban Consumers (CPI-U) which BLS reports to one decimal point (e.g. 0.4%). Thus, this is the level of precision that will be used when resolving the market.\n\nIf the BLS does not release the relevant figures on the scheduled date, this market may remain open up until the scheduled release time of the next CPI report (https://www.bls.gov/schedule). If the information is not released by that time, this market will resolve according to the figures of the most recent previous month with available data.",
+      "url": "https://polymarket.com/event/july-inflation-us-monthly-20260714151042665/will-monthly-inflation-increase-by-0pt1-or-more-in-july-20260714151054975",
+      "latent_lower": 0.05,
+      "latent_upper": null,
+      "round1_probability": 0.9877755273449553,
+      "round2_probability": 0.6174490598868317,
+      "delta": -0.3703264674581236,
+      "sources": [
+        {
+          "id": "cpi_may",
+          "url": "https://www.bls.gov/news.release/archives/cpi_06102026.htm",
+          "published_on": "2026-06-10",
+          "available_at": "2026-06-10T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "5月总体0.5%、核心0.2%、住房0.3%；能源贡献超过60%；同比4.2%。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "steo_jul",
+          "url": "https://www.eia.gov/outlooks/steo/archives/jul26.pdf",
+          "published_on": "2026-07-07",
+          "available_at": "2026-07-07T16:15:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "下调全年Brent预测95至82美元；预计Q3汽油较Q2低41美分至略低于3.80美元，季度跌幅不能直接映射7月CPI。",
+          "timestamp_basis": "报告确认发布日期；按官方通常12:00—12:15美东发布时间窗口的末端推定，非当日秒级发布证明。"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          0.3,
+          0.2,
+          0.3,
+          0.9,
+          0.6,
+          0.5
+        ],
+        "n": 6,
+        "hits": 6,
+        "empirical_rate": 1.0,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "温和正增长",
+          "weight": 0.5,
+          "mean": 0.2,
+          "sd": 0.25,
+          "probability_yes": 0.7257468822499265,
+          "weighted_probability": 0.3628734411249632
+        },
+        {
+          "label": "能源拖累",
+          "weight": 0.35,
+          "mean": -0.1,
+          "sd": 0.3,
+          "probability_yes": 0.3085375387259869,
+          "weighted_probability": 0.1079881385540954
+        },
+        {
+          "label": "再通胀",
+          "weight": 0.15,
+          "mean": 0.65,
+          "sd": 0.3,
+          "probability_yes": 0.9772498680518208,
+          "weighted_probability": 0.14658748020777312
+        }
+      ],
+      "reasoning": "5月总体涨幅大半来自能源；7月EIA下调油价及季度汽油价格预测。核心仍正增长，但不能保持至少0.1%的98%确定性。",
+      "against_yes": "能源回落可以抵消核心和住房；季度展望不保证当月。",
+      "against_no": "核心0.2%和住房0.3%提供正贡献。",
+      "update_reason": "新增7月7日能源展望反驳把5月0.5%机械持续至7月，允许较大更新。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 1,
+      "market_probability": 0.275,
+      "price_timestamp": "2026-07-14T23:59:05+00:00",
+      "price_bid": null,
+      "price_ask": null,
+      "price_kind": "开放日UTC日末：最后一条历史图表价格，非已核实成交/可执行报价",
+      "quality_flags": [
+        "历史图表价格；未核验当时买卖价差和成交"
+      ],
+      "settled_at": "2026-08-12 15:02:40+00",
+      "underlying_event": "CPI_RELEASE_2026-07",
+      "opening_day_traded_volume": null,
+      "endday_price_age_minutes": 0.9,
+      "losses": {
+        "round1_probability": 0.00014943773169393492,
+        "round2_probability": 0.14634522178146886,
+        "market_probability": 0.525625
+      }
+    },
+    {
+      "exam_id": "P03",
+      "platform": "Polymarket",
+      "market_id": "3539660",
+      "question": "2026年8月 CPI 环比不高于-0.3%？",
+      "cluster": "CPI-2026-08",
+      "information_cutoff": "2026-08-12T00:00:00Z",
+      "rules": "This is a market about the one-month percent change in the seasonally adjusted Consumer Price Index for All Urban Consumers (CPI-U) published by the Bureau of Labor Statistics (BLS).\n\nThis market will resolve to the one-month percent change in the seasonally adjusted Consumer Price Index for All Urban Consumers (CPI-U) in August 2026 according to the monthly BLS report.\n\nThe resolution source for this market will be the BLS Consumer Price Index report released for August 2026 (https://www.bls.gov/bls/news-release/cpi.htm), currently scheduled to be released on September 11, 2026, at 8:30 AM ET. Resolution of this market will take place upon release of the aforementioned data.\n\nNote: the resolution source for this market will be the official monthly Consumer Price Index for All Urban Consumers (CPI-U) which BLS reports to one decimal point (e.g. 0.4%). Thus, this is the level of precision that will be used when resolving the market.\n\nIf the BLS does not release the relevant figures on the scheduled date, this market may remain open up until the scheduled release time of the next CPI report (https://www.bls.gov/schedule). If the information is not released by that time, this market will resolve according to the figures of the most recent previous month with available data.",
+      "url": "https://polymarket.com/event/august-inflation-us-monthly-1786474662954/will-monthly-inflation-decrease-by-0pt3-or-more-in-august-1786475169280",
+      "latent_lower": null,
+      "latent_upper": -0.25,
+      "round1_probability": 0.7733726476231317,
+      "round2_probability": 0.09343742850986131,
+      "delta": -0.6799352191132704,
+      "sources": [
+        {
+          "id": "cpi_jun",
+          "url": "https://www.bls.gov/news.release/archives/cpi_07142026.htm",
+          "published_on": "2026-07-14",
+          "available_at": "2026-07-14T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "6月总体-0.4%、核心0.0%；能源-5.7%、汽油-9.7%；近年罕见总体负月值，核心商品与多类服务降价。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "steo_aug",
+          "url": "https://www.eia.gov/outlooks/steo/archives/aug26.pdf",
+          "published_on": "2026-08-11",
+          "available_at": "2026-08-11T16:15:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "较7月提高中东停产估计，假设海峡限制持续至8月，Q3 Brent约85美元；供应与库存风险反驳机械延续6月汽油大跌。",
+          "timestamp_basis": "报告确认发布日期；按官方通常12:00—12:15美东发布时间窗口的末端推定，非当日秒级发布证明。"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          0.3,
+          0.2,
+          0.3,
+          0.9,
+          0.6,
+          0.5,
+          -0.4
+        ],
+        "n": 7,
+        "hits": 1,
+        "empirical_rate": 0.14285714285714285,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "回到温和通胀",
+          "weight": 0.55,
+          "mean": 0.25,
+          "sd": 0.22,
+          "probability_yes": 0.011521310043880906,
+          "weighted_probability": 0.0063367205241344985
+        },
+        {
+          "label": "能源供应再收紧",
+          "weight": 0.25,
+          "mean": 0.5,
+          "sd": 0.25,
+          "probability_yes": 0.0013498980316301035,
+          "weighted_probability": 0.00033747450790752587
+        },
+        {
+          "label": "再现能源下跌",
+          "weight": 0.2,
+          "mean": -0.2,
+          "sd": 0.3,
+          "probability_yes": 0.43381616738909634,
+          "weighted_probability": 0.08676323347781928
+        }
+      ],
+      "reasoning": "6月负值主要由汽油-9.7%驱动，不能当稳定通胀中心；8月11日EIA提高停产和库存风险，降低连续大幅通缩情景权重。",
+      "against_yes": "再次不高于-0.3%需要能源继续大跌且抵消其他项；8月供应限制相反。",
+      "against_no": "核心6月为0、多个分项下降，不能排除通缩再现。",
+      "update_reason": "能源展望与一次性冲击归因共同推翻单月持平假设；这是方法更新和资料扩展，不是未来答案。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.16,
+      "price_timestamp": "2026-08-12T23:59:26+00:00",
+      "price_bid": null,
+      "price_ask": null,
+      "price_kind": "开放日UTC日末：最后一条历史图表价格，非已核实成交/可执行报价",
+      "quality_flags": [
+        "历史图表价格；未核验当时买卖价差和成交"
+      ],
+      "settled_at": "2026-09-11 14:33:27+00",
+      "underlying_event": "CPI_RELEASE_2026-08",
+      "opening_day_traded_volume": null,
+      "endday_price_age_minutes": 0.55,
+      "losses": {
+        "round1_probability": 0.5981052520916127,
+        "round2_probability": 0.008730553046535442,
+        "market_probability": 0.0256
+      }
+    },
+    {
+      "exam_id": "P04",
+      "platform": "Polymarket",
+      "market_id": "2810506",
+      "question": "2026年7月核心 CPI 环比恰为0.2%？",
+      "cluster": "CORE-2026-07",
+      "information_cutoff": "2026-07-05T00:00:00Z",
+      "rules": "This is a market about the one-month percent change in the Consumer Price Index for All Urban Consumers excluding food and energy in July 2026 as reported by the Bureau of Labor Statistics.\n\nThis market will resolve to the one-month percentage change in the Consumer Price Index for All Urban Consumers excluding food and energy (Core CPI-U) in July 2026 according to the monthly Bureau of Labor Statistics (BLS) report (seasonally adjusted change from the preceding month).\n\nThe resolution source for this market will be the BLS Consumer Price Index report released for July 2026 (https://www.bls.gov/bls/news-release/cpi.htm), currently scheduled to be released on August 12, 2026, at 8:30 AM ET. Resolution of this market will take place upon release of the aforementioned data.\n\nNote: the resolution source for this market will be the official monthly BLS CPI news release, which reports core inflation (all items less food and energy) over 1-month periods to only one decimal point (e.g., 0.3%). Thus, this is the level of precision that will be used when resolving the market. For the avoidance of doubt, this market resolves on the core CPI figure — the all items index excluding food and energy — not the headline all items CPI figure.\n\nIf the BLS does not release the relevant figures on the scheduled date, this market may remain open up until the scheduled release time of the next CPI report (https://www.bls.gov/schedule). If the information is not released by that time, this market will resolve according to the figures of the most recent previous month with available data.",
+      "url": "https://polymarket.com/event/core-cpi-mom-july-2026-20260705181328287/will-core-cpi-mom-be-0pt2-in-july-20260705181349576",
+      "latent_lower": 0.15,
+      "latent_upper": 0.25,
+      "round1_probability": 0.3829249225480261,
+      "round2_probability": 0.3214077236842769,
+      "delta": -0.061517198863749234,
+      "sources": [
+        {
+          "id": "cpi_may",
+          "url": "https://www.bls.gov/news.release/archives/cpi_06102026.htm",
+          "published_on": "2026-06-10",
+          "available_at": "2026-06-10T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "5月总体0.5%、核心0.2%、住房0.3%；能源贡献超过60%；同比4.2%。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "steo_jun",
+          "url": "https://www.eia.gov/outlooks/steo/archives/jun26.pdf",
+          "published_on": "2026-06-09",
+          "available_at": "2026-06-09T16:15:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "预计6、7月Brent约105美元；5月均价107美元，较4月下跌10美元；假设海峡近期开通仍有限，能源涨跌两种路径均可能。",
+          "timestamp_basis": "报告确认发布日期；按官方通常12:00—12:15美东发布时间窗口的末端推定，非当日秒级发布证明。"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          0.2,
+          0.3,
+          0.2,
+          0.2,
+          0.4,
+          0.2
+        ],
+        "n": 6,
+        "hits": 4,
+        "empirical_rate": 0.6666666666666666,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "核心回到常见水平",
+          "weight": 0.7,
+          "mean": 0.22,
+          "sd": 0.09,
+          "probability_yes": 0.4122086444568575,
+          "weighted_probability": 0.28854605111980025
+        },
+        {
+          "label": "成本向核心传导",
+          "weight": 0.2,
+          "mean": 0.4,
+          "sd": 0.12,
+          "probability_yes": 0.08703934847696887,
+          "weighted_probability": 0.017407869695393773
+        },
+        {
+          "label": "商品服务降价",
+          "weight": 0.1,
+          "mean": 0.05,
+          "sd": 0.12,
+          "probability_yes": 0.15453802869082844,
+          "weighted_probability": 0.015453802869082845
+        }
+      ],
+      "reasoning": "核心近6个可见月有4个为0.2%；4月高值后5月回落，能源冲击有间接传导但不等于核心同步大涨。",
+      "against_yes": "精确区间窄，迟滞成本传导或降价均会错过。",
+      "against_no": "0.2%反复出现，住房5月0.3%，支持温和核心。",
+      "update_reason": "由单正态改为温和、传导、降价三情景；不给重复来源独立专家权重。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 1,
+      "market_probability": 0.495,
+      "price_timestamp": "2026-07-05T23:59:05+00:00",
+      "price_bid": null,
+      "price_ask": null,
+      "price_kind": "开放日UTC日末：最后一条历史图表价格，非已核实成交/可执行报价",
+      "quality_flags": [
+        "日末图表价格仍接近初始50%；缺少可执行买卖价差和成交核验"
+      ],
+      "settled_at": "2026-08-12 15:10:40+00",
+      "underlying_event": "CPI_RELEASE_2026-07",
+      "opening_day_traded_volume": null,
+      "endday_price_age_minutes": 0.9,
+      "losses": {
+        "round1_probability": 0.3807816512123596,
+        "round2_probability": 0.4604874774753546,
+        "market_probability": 0.255025
+      }
+    },
+    {
+      "exam_id": "P05",
+      "platform": "Polymarket",
+      "market_id": "3539685",
+      "question": "2026年8月核心 CPI 环比不高于0.0%？",
+      "cluster": "CORE-2026-08",
+      "information_cutoff": "2026-08-12T00:00:00Z",
+      "rules": "This is a market about the one-month percent change in the Consumer Price Index for All Urban Consumers excluding food and energy in August 2026 as reported by the Bureau of Labor Statistics.\n\nThis market will resolve to the one-month percentage change in the Consumer Price Index for All Urban Consumers excluding food and energy (Core CPI-U) in August 2026 according to the monthly Bureau of Labor Statistics (BLS) report (seasonally adjusted change from the preceding month).\n\nThe resolution source for this market will be the BLS Consumer Price Index report released for August 2026 (https://www.bls.gov/bls/news-release/cpi.htm), currently scheduled to be released on September 11, 2026, at 8:30 AM ET. Resolution of this market will take place upon release of the aforementioned data.\n\nNote: the resolution source for this market will be the official monthly BLS CPI news release, which reports core inflation (all items less food and energy) over 1-month periods to only one decimal point (e.g., 0.3%). Thus, this is the level of precision that will be used when resolving the market. For the avoidance of doubt, this market resolves on the core CPI figure — the all items index excluding food and energy — not the headline all items CPI figure.\n\nIf the BLS does not release the relevant figures on the scheduled date, this market may remain open up until the scheduled release time of the next CPI report (https://www.bls.gov/schedule). If the information is not released by that time, this market will resolve according to the figures of the most recent previous month with available data.",
+      "url": "https://polymarket.com/event/core-cpi-mom-august-2026-1786474662954/will-core-cpi-mom-be-0pt0-or-less-in-august-1786474663154",
+      "latent_lower": null,
+      "latent_upper": 0.05,
+      "round1_probability": 0.691462461274013,
+      "round2_probability": 0.23568407273107841,
+      "delta": -0.4557783885429346,
+      "sources": [
+        {
+          "id": "cpi_jun",
+          "url": "https://www.bls.gov/news.release/archives/cpi_07142026.htm",
+          "published_on": "2026-07-14",
+          "available_at": "2026-07-14T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "6月总体-0.4%、核心0.0%；能源-5.7%、汽油-9.7%；近年罕见总体负月值，核心商品与多类服务降价。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "steo_aug",
+          "url": "https://www.eia.gov/outlooks/steo/archives/aug26.pdf",
+          "published_on": "2026-08-11",
+          "available_at": "2026-08-11T16:15:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "较7月提高中东停产估计，假设海峡限制持续至8月，Q3 Brent约85美元；供应与库存风险反驳机械延续6月汽油大跌。",
+          "timestamp_basis": "报告确认发布日期；按官方通常12:00—12:15美东发布时间窗口的末端推定，非当日秒级发布证明。"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          0.2,
+          0.3,
+          0.2,
+          0.2,
+          0.4,
+          0.2,
+          0
+        ],
+        "n": 7,
+        "hits": 1,
+        "empirical_rate": 0.14285714285714285,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "核心回归正增长",
+          "weight": 0.6,
+          "mean": 0.18,
+          "sd": 0.12,
+          "probability_yes": 0.13933024744962208,
+          "weighted_probability": 0.08359814846977325
+        },
+        {
+          "label": "弱需求降价继续",
+          "weight": 0.25,
+          "mean": 0.02,
+          "sd": 0.12,
+          "probability_yes": 0.5987063256829237,
+          "weighted_probability": 0.14967658142073093
+        },
+        {
+          "label": "滞后成本传导",
+          "weight": 0.15,
+          "mean": 0.35,
+          "sd": 0.14,
+          "probability_yes": 0.01606228560382833,
+          "weighted_probability": 0.0024093428405742496
+        }
+      ],
+      "reasoning": "6月核心零增长是多个商品和服务同时降价的结果；近期历史多数仍正增长。能源约束对核心只作间接上行风险，不直接代入汽油。",
+      "against_yes": "零增长可能是暂时低值，随后价格恢复及成本传导会超过0。",
+      "against_no": "6月弱分项、住房偏弱支持再次零或负增长。",
+      "update_reason": "对孤立0.0%的中心作均值回归，同时保留25%持续弱需求情景，降低第一轮过度集中。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.16,
+      "price_timestamp": "2026-08-12T23:59:26+00:00",
+      "price_bid": null,
+      "price_ask": null,
+      "price_kind": "开放日UTC日末：最后一条历史图表价格，非已核实成交/可执行报价",
+      "quality_flags": [
+        "历史图表价格；未核验当时买卖价差和成交"
+      ],
+      "settled_at": "2026-09-11 14:32:54+00",
+      "underlying_event": "CPI_RELEASE_2026-08",
+      "opening_day_traded_volume": null,
+      "endday_price_age_minutes": 0.55,
+      "losses": {
+        "round1_probability": 0.4781203353511159,
+        "round2_probability": 0.05554698213910826,
+        "market_probability": 0.0256
+      }
+    },
+    {
+      "exam_id": "P06",
+      "platform": "Polymarket",
+      "market_id": "2491373",
+      "question": "2026年6月 CPI 同比恰为3.8%？",
+      "cluster": "CPIYOY-2026-06",
+      "information_cutoff": "2026-06-10T00:00:00Z",
+      "rules": "This is a market about inflation over the 12-month period ending June 2026, before seasonal adjustment, as reported by the Bureau of Labor Statistics.\n\nThis market will resolve to the percentage change in the Consumer Price Index (CPI) over the 12-month period ending in June 2026 according to the monthly Bureau of Labor Statistics (BLS) report.\n\nThe resolution source for this market will be the BLS Consumer Price Index report released for June 2026 (https://www.bls.gov/bls/news-release/cpi.htm), currently scheduled to be released on July 14, 2026, at 8:30 AM ET. Resolution of this market will take place upon release of the aforementioned data.\n\nNote: the resolution source for this market will be the official monthly BLS CPI news release, which reports inflation over 12-month periods to only one decimal point (e.g., 2.9%). Thus, this is the level of precision that will be used when resolving the market.\n\nIf the BLS does not release the relevant figures on the scheduled date, this market may remain open up until the scheduled release time of the next CPI report (https://www.bls.gov/schedule). If the information is not released by that time, this market will resolve according to the figures of the most recent previous month with available data.",
+      "url": "https://polymarket.com/event/june-inflation-us-annual-20260610151727862/will-annual-inflation-be-3pt8-in-june-20260610151731660",
+      "latent_lower": 3.75,
+      "latent_upper": 3.85,
+      "round1_probability": 0.09947644966022584,
+      "round2_probability": 0.06321889270219855,
+      "delta": -0.03625755695802729,
+      "sources": [
+        {
+          "id": "cpi_apr",
+          "url": "https://www.bls.gov/news.release/archives/cpi_05122026.htm",
+          "published_on": "2026-05-12",
+          "available_at": "2026-05-12T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "4月总体0.6%、核心0.4%、住房0.6%；能源贡献超过40%；同比3.8%。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "steo_jun",
+          "url": "https://www.eia.gov/outlooks/steo/archives/jun26.pdf",
+          "published_on": "2026-06-09",
+          "available_at": "2026-06-09T16:15:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "预计6、7月Brent约105美元；5月均价107美元，较4月下跌10美元；假设海峡近期开通仍有限，能源涨跌两种路径均可能。",
+          "timestamp_basis": "报告确认发布日期；按官方通常12:00—12:15美东发布时间窗口的末端推定，非当日秒级发布证明。"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "政策路径的定性外部视角；未建立可用的同类会议频率样本",
+        "values": [],
+        "n": 0,
+        "hits": 0,
+        "empirical_rate": null,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "同比仍偏高",
+          "weight": 0.6,
+          "mean": 4.2,
+          "sd": 0.45,
+          "probability_yes": 0.05969476142992186,
+          "weighted_probability": 0.03581685685795311
+        },
+        {
+          "label": "能源降温",
+          "weight": 0.25,
+          "mean": 3.65,
+          "sd": 0.35,
+          "probability_yes": 0.10369389799931605,
+          "weighted_probability": 0.025923474499829013
+        },
+        {
+          "label": "供应再受冲击",
+          "weight": 0.15,
+          "mean": 4.9,
+          "sd": 0.55,
+          "probability_yes": 0.009857075629442769,
+          "weighted_probability": 0.0014785613444164153
+        }
+      ],
+      "reasoning": "4月同比3.8%是已实现12个月变化，不能直接外推6月；需考虑新月价格及移出窗口的旧月基数。未完整重建NSA指数链，保留较宽情景。",
+      "against_yes": "精确3.8%很窄，基数和能源会改变同比。",
+      "against_no": "能源若降温，3.8%附近仍可实现。",
+      "update_reason": "补充基数效应和能源展望；缺少完整基数链，不声称已精确费米拆解。",
+      "fermi": "同比应由指数比值链构造；缺少全部NSA基数，不相乘任意分项概率。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.08,
+      "price_timestamp": "2026-06-10T23:59:04+00:00",
+      "price_bid": null,
+      "price_ask": null,
+      "price_kind": "开放日UTC日末：最后一条历史图表价格，非已核实成交/可执行报价",
+      "quality_flags": [
+        "历史图表价格；未核验当时买卖价差和成交"
+      ],
+      "settled_at": "2026-07-14 14:33:37+00",
+      "underlying_event": "CPI_RELEASE_2026-06",
+      "opening_day_traded_volume": null,
+      "endday_price_age_minutes": 0.9166666666666666,
+      "losses": {
+        "round1_probability": 0.009895564037003446,
+        "round2_probability": 0.003996628394492093,
+        "market_probability": 0.0064
+      }
+    },
+    {
+      "exam_id": "P07",
+      "platform": "Polymarket",
+      "market_id": "2446986",
+      "question": "2026年6月新增非农10万至15万人？",
+      "cluster": "NFP-2026-06",
+      "information_cutoff": "2026-06-05T00:00:00Z",
+      "rules": "This market will resolve according to the change in the total nonfarm payroll employment reported by the BLS \"Employment Situation Summary\" for June 2026, scheduled to be released on July 2, 2026, at 8:30 AM ET.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf no data for the specified month is released by the date the next month's data is scheduled to be released, this market will resolve based on data from the last available month.\n\nThe BLS \"Employment Situation Summary\" may be found here: https://www.bls.gov/bls/newsrels.htm",
+      "url": "https://polymarket.com/event/how-many-jobs-added-in-june-20260605153057140/will-the-us-add-between-100k-and-150k-jobs-in-june-20260605153249414",
+      "latent_lower": 100000,
+      "latent_upper": 150000,
+      "round1_probability": 0.1964483435458615,
+      "round2_probability": 0.1404845952264991,
+      "delta": -0.055963748319362405,
+      "sources": [
+        {
+          "id": "jobs_apr",
+          "url": "https://www.bls.gov/news.release/archives/empsit_05082026.htm",
+          "published_on": "2026-05-08",
+          "available_at": "2026-05-08T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "4月新增115000；当版2月-156000、3月185000；卫生保健和运输等支撑，过去12个月净增长较弱、联邦政府继续减少。",
+          "timestamp_basis": "官方发布声明中的时点"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          -156000,
+          185000,
+          115000
+        ],
+        "n": 3,
+        "hits": 1,
+        "empirical_rate": 0.3333333333333333,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "就业温和偏弱",
+          "weight": 0.55,
+          "mean": 60000,
+          "sd": 110000,
+          "probability_yes": 0.15143809668096242,
+          "weighted_probability": 0.08329095317452934
+        },
+        {
+          "label": "扩张延续",
+          "weight": 0.3,
+          "mean": 160000,
+          "sd": 110000,
+          "probability_yes": 0.171061946018642,
+          "weighted_probability": 0.0513185838055926
+        },
+        {
+          "label": "收缩",
+          "weight": 0.15,
+          "mean": -80000,
+          "sd": 120000,
+          "probability_yes": 0.039167054975847604,
+          "weighted_probability": 0.005875058246377141
+        }
+      ],
+      "reasoning": "4月新增115000，但同版2月显著减少、3月增加，净趋势波动且增长集中。用多个行业与周期路径代替单月持平。",
+      "against_yes": "运输和部分行业反弹可能不持续，10万—15万窄范围易错过。",
+      "against_no": "医疗等仍增加，新增就业可继续温和扩张。",
+      "update_reason": "分项和既有修订显示波动大；3个月参考平均弱于最新单月。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.49,
+      "price_timestamp": "2026-06-05T23:59:04+00:00",
+      "price_bid": null,
+      "price_ask": null,
+      "price_kind": "开放日UTC日末：最后一条历史图表价格，非已核实成交/可执行报价",
+      "quality_flags": [
+        "历史图表价格；未核验当时买卖价差和成交"
+      ],
+      "settled_at": "2026-07-02 14:34:44+00",
+      "underlying_event": "NFP-2026-06",
+      "opening_day_traded_volume": null,
+      "endday_price_age_minutes": 0.9166666666666666,
+      "losses": {
+        "round1_probability": 0.03859195168191282,
+        "round2_probability": 0.01973592149595329,
+        "market_probability": 0.24009999999999998
+      }
+    },
+    {
+      "exam_id": "P08",
+      "platform": "Polymarket",
+      "market_id": "2775417",
+      "question": "2026年7月新增非农15万至20万人？",
+      "cluster": "NFP-2026-07",
+      "information_cutoff": "2026-07-02T00:00:00Z",
+      "rules": "This market will resolve according to the change in the total nonfarm payroll employment reported by the BLS \"Employment Situation Summary\" for July 2026, scheduled to be released on August 7, 2026, at 8:30 AM ET.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nIf no data for the specified month is released by the date the next month's data is scheduled to be released, this market will resolve based on data from the last available month.\n\nThe BLS \"Employment Situation Summary\" may be found here: https://www.bls.gov/bls/newsrels.htm",
+      "url": "https://polymarket.com/event/how-many-jobs-added-in-july-20260702221813246/will-the-us-add-between-150k-and-200k-jobs-in-july-20260702221826047",
+      "latent_lower": 150000,
+      "latent_upper": 200000,
+      "round1_probability": 0.19732567020401182,
+      "round2_probability": 0.1603525165405378,
+      "delta": -0.03697315366347401,
+      "sources": [
+        {
+          "id": "jobs_may",
+          "url": "https://www.bls.gov/news.release/archives/empsit_06052026.htm",
+          "published_on": "2026-06-05",
+          "available_at": "2026-06-05T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "5月新增172000；3月修订214000、4月179000，合计上修93000；增长集中休闲酒店、地方政府和卫生保健。",
+          "timestamp_basis": "官方发布声明中的时点"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          214000,
+          179000,
+          172000
+        ],
+        "n": 3,
+        "hits": 2,
+        "empirical_rate": 0.6666666666666666,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "近期扩张延续",
+          "weight": 0.65,
+          "mean": 180000,
+          "sd": 100000,
+          "probability_yes": 0.1971711316280556,
+          "weighted_probability": 0.12816123555823614
+        },
+        {
+          "label": "动能变弱",
+          "weight": 0.2,
+          "mean": 40000,
+          "sd": 120000,
+          "probability_yes": 0.08844744943891747,
+          "weighted_probability": 0.017689489887783495
+        },
+        {
+          "label": "更强扩张",
+          "weight": 0.15,
+          "mean": 300000,
+          "sd": 120000,
+          "probability_yes": 0.09667860729678779,
+          "weighted_probability": 0.014501791094518168
+        }
+      ],
+      "reasoning": "5月报告把此前两月合计上修93000，支持近期扩张；但增长集中且范围仅5万人，保留衰弱与更强增长两侧情景。",
+      "against_yes": "行业集中和宏观风险可能使增长低于15万。",
+      "against_no": "近期三个月均高于15万，上修增强动能。",
+      "update_reason": "使用截止前同版修订信息，而不是今天修订值；本题截止日7月2日新报告仍排除。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.5,
+      "price_timestamp": "2026-07-02T23:59:03+00:00",
+      "price_bid": null,
+      "price_ask": null,
+      "price_kind": "开放日UTC日末：最后一条历史图表价格，非已核实成交/可执行报价",
+      "quality_flags": [
+        "日末图表价格仍接近初始50%；缺少可执行买卖价差和成交核验"
+      ],
+      "settled_at": "2026-08-07 14:32:43+00",
+      "underlying_event": "NFP-2026-07",
+      "opening_day_traded_volume": null,
+      "endday_price_age_minutes": 0.9333333333333333,
+      "losses": {
+        "round1_probability": 0.03893742012146244,
+        "round2_probability": 0.025712929560883453,
+        "market_probability": 0.25
+      }
+    },
+    {
+      "exam_id": "P09",
+      "platform": "Polymarket",
+      "market_id": "3403943",
+      "question": "2026年8月新增非农5万至10万人？",
+      "cluster": "NFP-2026-08",
+      "information_cutoff": "2026-08-07T00:00:00Z",
+      "rules": "This market will resolve according to the change in the total nonfarm payroll employment reported by the BLS \"Employment Situation Summary\" for August 2026, scheduled to be released on September 4, 2026, at 8:30 AM ET.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket. \n\nIf no data for the specified month is released by the date the next month's data is scheduled to be released, this market will resolve based on data from the last available month.\n\nThe BLS \"Employment Situation Summary\" may be found here: https://www.bls.gov/bls/newsrels.htm",
+      "url": "https://polymarket.com/event/how-many-jobs-added-in-august-1786116586124/will-the-us-add-between-50k-and-100k-jobs-in-august-1786116586227",
+      "latent_lower": 50000,
+      "latent_upper": 100000,
+      "round1_probability": 0.19430534958506335,
+      "round2_probability": 0.145849648148021,
+      "delta": -0.04845570143704234,
+      "sources": [
+        {
+          "id": "jobs_jun",
+          "url": "https://www.bls.gov/news.release/archives/empsit_07022026.htm",
+          "published_on": "2026-07-02",
+          "available_at": "2026-07-02T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "6月新增57000；4月修订148000、5月129000，合计下修74000；休闲酒店减少61000，工时略弱。",
+          "timestamp_basis": "官方发布声明中的时点"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          148000,
+          129000,
+          57000
+        ],
+        "n": 3,
+        "hits": 1,
+        "empirical_rate": 0.3333333333333333,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "较弱但正增长",
+          "weight": 0.55,
+          "mean": 70000,
+          "sd": 120000,
+          "probability_yes": 0.16489015829382736,
+          "weighted_probability": 0.09068958706160506
+        },
+        {
+          "label": "反弹",
+          "weight": 0.25,
+          "mean": 150000,
+          "sd": 100000,
+          "probability_yes": 0.14988228479452986,
+          "weighted_probability": 0.037470571198632466
+        },
+        {
+          "label": "继续收缩",
+          "weight": 0.2,
+          "mean": -60000,
+          "sd": 120000,
+          "probability_yes": 0.08844744943891747,
+          "weighted_probability": 0.017689489887783495
+        }
+      ],
+      "reasoning": "6月增长57000，前两月下修74000，休闲酒店减少61000；下修与行业弱势支持较低中心，但季节招聘也可能恢复。",
+      "against_yes": "下修或行业继续收缩可能落到5万以下，反弹也可能超过10万。",
+      "against_no": "医疗和社会服务仍支撑，5万—10万是可行范围。",
+      "update_reason": "扩大尾部，不把57000锁成下个月中心；8月7日当天报告排除。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.43,
+      "price_timestamp": "2026-08-07T23:59:10+00:00",
+      "price_bid": null,
+      "price_ask": null,
+      "price_kind": "开放日UTC日末：最后一条历史图表价格，非已核实成交/可执行报价",
+      "quality_flags": [
+        "历史图表价格；未核验当时买卖价差和成交"
+      ],
+      "settled_at": "2026-09-04 14:33:18+00",
+      "underlying_event": "NFP-2026-08",
+      "opening_day_traded_volume": null,
+      "endday_price_age_minutes": 0.8166666666666667,
+      "losses": {
+        "round1_probability": 0.037754568877373676,
+        "round2_probability": 0.021272119864901528,
+        "market_probability": 0.18489999999999998
+      }
+    },
+    {
+      "exam_id": "P10",
+      "platform": "Polymarket",
+      "market_id": "2125608",
+      "question": "2026年第二季实际 GDP 增长低于1.0%？",
+      "cluster": "GDP-2026-Q2",
+      "information_cutoff": "2026-04-30T00:00:00Z",
+      "rules": "This market will resolve according to the seasonally adjusted and annualized GDP \"Advance Estimate\" release for Q2 of 2026, scheduled for July 30, 2026.\n\nIf the reported value falls exactly between two brackets, then this market will resolve to the higher range bracket.\n\nThe GDP release will be made available here: https://www.bea.gov/data/gdp/gross-domestic-product\n\nNote: data in the first available GDP report is labelled by the BEA as an \"Advance Estimate\". The data found in the advance estimate will be used to resolve this market. Data may be revised during the following quarter or as a part of the next estimate's publication, however any revisions to GDP report data made after the release of the advance estimate will not be considered for this market's resolution.\n\nIf the advance estimate is not released, this market will resolve based on the first officially published figure for real GDP for the specified quarter (e.g., the ‘second’ or ‘third’ estimate, etc.), as reported by the BEA. If no official estimate is released by the date the next quarter's advanced estimate is scheduled to be published, this market will resolve based on the most recent previous figure released by the BEA.",
+      "url": "https://polymarket.com/event/us-gdp-growth-in-q2-2026/will-us-gdp-growth-in-q2-2026-be-less-than-1pt0",
+      "latent_lower": null,
+      "latent_upper": 0.95,
+      "round1_probability": 0.5890103628687295,
+      "round2_probability": 0.44798064003016,
+      "delta": -0.14102972283856952,
+      "sources": [
+        {
+          "id": "gdp_third",
+          "url": "https://www.bea.gov/news/2026/gdp-third-estimate-industries-corporate-profits-state-gdp-and-state-personal-income-4th",
+          "published_on": "2026-04-09",
+          "available_at": "2026-04-09T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "2025Q4实际GDP年化0.5%、私人国内最终销售1.8%、GDI2.6%；2025Q3 GDP4.4%。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "sep_mar26",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260318.htm",
+          "published_on": "2026-03-18",
+          "available_at": "2026-03-18T18:00:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "2026全年Q4/Q4 GDP增长中位数2.4%；14位认为风险偏下行，15位认为不确定性偏高；全年口径不等于某一季度SAAR。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "steo_apr",
+          "url": "https://www.eia.gov/outlooks/steo/archives/apr26.pdf",
+          "published_on": "2026-04-07",
+          "available_at": "2026-04-07T16:15:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "能源供应冲击下，上调2026年Brent均价预测至96美元，较上版79美元上升；这是预测而不是实现值。",
+          "timestamp_basis": "报告确认发布日期；按官方通常12:00—12:15美东发布时间窗口的末端推定，非当日秒级发布证明。"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          4.4,
+          0.5
+        ],
+        "n": 2,
+        "hits": 1,
+        "empirical_rate": 0.5,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "私人需求维持",
+          "weight": 0.55,
+          "mean": 1.5,
+          "sd": 1.6,
+          "probability_yes": 0.3655171526900427,
+          "weighted_probability": 0.2010344339795235
+        },
+        {
+          "label": "能源和需求冲击",
+          "weight": 0.3,
+          "mean": -0.5,
+          "sd": 1.8,
+          "probability_yes": 0.7897504195343594,
+          "weighted_probability": 0.2369251258603078
+        },
+        {
+          "label": "政府与贸易反弹",
+          "weight": 0.15,
+          "mean": 3.5,
+          "sd": 1.7,
+          "probability_yes": 0.06680720126885809,
+          "weighted_probability": 0.010021080190328713
+        }
+      ],
+      "reasoning": "Q4 GDP0.5%弱于私人最终需求1.8%和GDI2.6%；可出现反弹，但能源冲击及联储下行风险支持负面情景。全年SEP不能直接当Q2增长。",
+      "against_yes": "私人需求比总体更强，政府拖累若减弱可高于1%。",
+      "against_no": "能源冲击及下行风险可能压低Q2。",
+      "update_reason": "补入私人需求、GDI和能源情景，避免照搬停摆季度的总GDP。",
+      "fermi": "GDP为消费、投资、政府与净出口的贡献之和；未建完整贡献账，不相乘概率。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.26,
+      "price_timestamp": "2026-04-30T23:59:05+00:00",
+      "price_bid": null,
+      "price_ask": null,
+      "price_kind": "开放日UTC日末：最后一条历史图表价格，非已核实成交/可执行报价",
+      "quality_flags": [
+        "历史图表价格；未核验当时买卖价差和成交"
+      ],
+      "settled_at": "2026-07-30 14:33:42+00",
+      "underlying_event": "GDP-2026-Q2",
+      "opening_day_traded_volume": null,
+      "endday_price_age_minutes": 0.9,
+      "losses": {
+        "round1_probability": 0.34693320756675244,
+        "round2_probability": 0.20068665384183182,
+        "market_probability": 0.06760000000000001
+      }
+    },
+    {
+      "exam_id": "K01",
+      "platform": "Kalshi",
+      "market_id": "KXCPI-26JUL-T0.3",
+      "question": "2026年7月 CPI 环比高于0.3%？",
+      "cluster": "CPI-2026-07",
+      "information_cutoff": "2026-02-20T00:00:00Z",
+      "rules": "If the Consumer Price Index (CPI) increases by more than 0.3% (single-decimal) in July 2026, then the market resolves to Yes.\nThe market will always close at 8:25 AM ET on the scheduled day of the data release (August 12, 2026). Please note: the Expiration Value is the single-decimal value published at the Source Agency. In the case of a delay in data caused by a federal government shutdown impacting the reliability of the Source Agency, the market’s latest Expiration Date will be extended to the sooner of the release of the Underlying or six months after the end of the government shutdown.",
+      "url": "https://kalshi.com/markets/kxcpi/kxcpi-26jul",
+      "latent_lower": 0.35,
+      "latent_upper": null,
+      "round1_probability": 0.22662735237686837,
+      "round2_probability": 0.31735105839484196,
+      "delta": 0.09072370601797358,
+      "sources": [
+        {
+          "id": "cpi_jan",
+          "url": "https://www.bls.gov/news.release/archives/cpi_02132026.htm",
+          "published_on": "2026-02-13",
+          "available_at": "2026-02-13T13:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "1月总体环比0.2%、核心0.3%；可见近期总体月值0.2、0.3、0.3、0.3、0.2；10/11月缺值，不补0。",
+          "timestamp_basis": "官方发布声明中的时点"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          0.2,
+          0.3,
+          0.3,
+          0.3,
+          0.2
+        ],
+        "n": 5,
+        "hits": 0,
+        "empirical_rate": 0.0,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "常态通胀",
+          "weight": 0.7,
+          "mean": 0.25,
+          "sd": 0.18,
+          "probability_yes": 0.289257360753972,
+          "weighted_probability": 0.2024801525277804
+        },
+        {
+          "label": "上行冲击",
+          "weight": 0.15,
+          "mean": 0.5,
+          "sd": 0.25,
+          "probability_yes": 0.7257468822499265,
+          "weighted_probability": 0.10886203233748896
+        },
+        {
+          "label": "下行冲击",
+          "weight": 0.15,
+          "mean": 0,
+          "sd": 0.19999999999999998,
+          "probability_yes": 0.040059156863817114,
+          "weighted_probability": 0.006008873529572567
+        }
+      ],
+      "reasoning": "截止2月20日只能看到1月温和总体及核心，目标在5—6个月后；保留未发生冲击风险，不能使用之后能源战争资料。",
+      "against_yes": "超过0.3%需要更高价格压力，1月总体仅0.2%。",
+      "against_no": "1月核心0.3%、能源下跌压低总体，未来反转可能超过阈值。",
+      "update_reason": "长预测期不确定性应增大；与短期单月持平概率不同。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.5,
+      "price_timestamp": "2026-02-20T21:50:00+00:00",
+      "price_bid": 0.02,
+      "price_ask": 0.98,
+      "price_kind": "开放日UTC日末：最后1分钟收盘买卖报价中点；可能未成交",
+      "quality_flags": [
+        "日末买卖价差超过20pp",
+        "API首日分钟K线未记录成交",
+        "最后价格更新距日末超过60分钟"
+      ],
+      "settled_at": "2026-08-12T12:56:49.124857Z",
+      "underlying_event": "CPI_RELEASE_2026-07",
+      "opening_day_traded_volume": 0.0,
+      "endday_price_age_minutes": 129.98333333333332,
+      "losses": {
+        "round1_probability": 0.05135995684534927,
+        "round2_probability": 0.10071169426432638,
+        "market_probability": 0.25
+      }
+    },
+    {
+      "exam_id": "K02",
+      "platform": "Kalshi",
+      "market_id": "KXCPI-26AUG-T0.3",
+      "question": "2026年8月 CPI 环比高于0.3%？",
+      "cluster": "CPI-2026-08",
+      "information_cutoff": "2026-02-20T00:00:00Z",
+      "rules": "If the Consumer Price Index (CPI) increases by more than 0.3% (single-decimal) in August 2026, then the market resolves to Yes.\nThe market will always close at 8:25 AM ET on the scheduled day of the data release (September 11, 2026). Please note: the Expiration Value is the single-decimal value published at the Source Agency. In the case of a delay in data caused by a federal government shutdown impacting the reliability of the Source Agency, the market’s latest Expiration Date will be extended to the sooner of the release of the Underlying or six months after the end of the government shutdown.",
+      "url": "https://kalshi.com/markets/kxcpi/kxcpi-26aug",
+      "latent_lower": 0.35,
+      "latent_upper": null,
+      "round1_probability": 0.22662735237686837,
+      "round2_probability": 0.33095992572175686,
+      "delta": 0.10433257334488849,
+      "sources": [
+        {
+          "id": "cpi_jan",
+          "url": "https://www.bls.gov/news.release/archives/cpi_02132026.htm",
+          "published_on": "2026-02-13",
+          "available_at": "2026-02-13T13:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "1月总体环比0.2%、核心0.3%；可见近期总体月值0.2、0.3、0.3、0.3、0.2；10/11月缺值，不补0。",
+          "timestamp_basis": "官方发布声明中的时点"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          0.2,
+          0.3,
+          0.3,
+          0.3,
+          0.2
+        ],
+        "n": 5,
+        "hits": 0,
+        "empirical_rate": 0.0,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "常态通胀",
+          "weight": 0.7,
+          "mean": 0.25,
+          "sd": 0.2,
+          "probability_yes": 0.308537538725987,
+          "weighted_probability": 0.2159762771081909
+        },
+        {
+          "label": "上行冲击",
+          "weight": 0.15,
+          "mean": 0.5,
+          "sd": 0.27,
+          "probability_yes": 0.710742639246028,
+          "weighted_probability": 0.1066113958869042
+        },
+        {
+          "label": "下行冲击",
+          "weight": 0.15,
+          "mean": 0,
+          "sd": 0.22,
+          "probability_yes": 0.055815018177745035,
+          "weighted_probability": 0.008372252726661755
+        }
+      ],
+      "reasoning": "截止2月20日只能看到1月温和总体及核心，目标在5—6个月后；保留未发生冲击风险，不能使用之后能源战争资料。",
+      "against_yes": "超过0.3%需要更高价格压力，1月总体仅0.2%。",
+      "against_no": "1月核心0.3%、能源下跌压低总体，未来反转可能超过阈值。",
+      "update_reason": "长预测期不确定性应增大；与短期单月持平概率不同。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 1,
+      "market_probability": 0.5,
+      "price_timestamp": "2026-02-20T21:50:00+00:00",
+      "price_bid": 0.02,
+      "price_ask": 0.98,
+      "price_kind": "开放日UTC日末：最后1分钟收盘买卖报价中点；可能未成交",
+      "quality_flags": [
+        "日末买卖价差超过20pp",
+        "API首日分钟K线未记录成交",
+        "最后价格更新距日末超过60分钟"
+      ],
+      "settled_at": "2026-09-11T13:28:53.706257Z",
+      "underlying_event": "CPI_RELEASE_2026-08",
+      "opening_day_traded_volume": 0.0,
+      "endday_price_age_minutes": 129.98333333333332,
+      "losses": {
+        "round1_probability": 0.5981052520916125,
+        "round2_probability": 0.4476146209902372,
+        "market_probability": 0.25
+      }
+    },
+    {
+      "exam_id": "K03",
+      "platform": "Kalshi",
+      "market_id": "KXCPICORE-26JUN-T0.2",
+      "question": "2026年6月核心 CPI 环比高于0.2%？",
+      "cluster": "CORE-2026-06",
+      "information_cutoff": "2026-04-10T00:00:00Z",
+      "rules": "If the seasonally adjusted Consumer Price Index for All Urban Consumers: All Items less Food and Energy for June 2026, as published by the Bureau of Labor Statistics, increases by above 0.2%, then the market resolves to Yes.\nPlease note that the value of the Underlying is the single-decimal value reported by the BLS.\n\nIn the case of a delay in data caused by a federal government shutdown impacting the reliability of the Source Agency, the market’s latest Expiration Date will be extended to the sooner of the release of the Underlying or six months after the end of the government shutdown.",
+      "url": "https://kalshi.com/markets/kxcpicore/kxcpicore-26jun",
+      "latent_lower": 0.25,
+      "latent_upper": null,
+      "round1_probability": 0.308537538725987,
+      "round2_probability": 0.48703856211762736,
+      "delta": 0.17850102339164037,
+      "sources": [
+        {
+          "id": "cpi_feb",
+          "url": "https://www.bls.gov/news.release/archives/cpi_03112026.htm",
+          "published_on": "2026-03-11",
+          "available_at": "2026-03-11T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "2月总体0.3%、核心0.2%；住房0.2%。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "steo_apr",
+          "url": "https://www.eia.gov/outlooks/steo/archives/apr26.pdf",
+          "published_on": "2026-04-07",
+          "available_at": "2026-04-07T16:15:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "能源供应冲击下，上调2026年Brent均价预测至96美元，较上版79美元上升；这是预测而不是实现值。",
+          "timestamp_basis": "报告确认发布日期；按官方通常12:00—12:15美东发布时间窗口的末端推定，非当日秒级发布证明。"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          0.2,
+          0.3,
+          0.2
+        ],
+        "n": 3,
+        "hits": 1,
+        "empirical_rate": 0.3333333333333333,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "温和核心",
+          "weight": 0.65,
+          "mean": 0.23,
+          "sd": 0.11,
+          "probability_yes": 0.42786270766003587,
+          "weighted_probability": 0.27811075997902335
+        },
+        {
+          "label": "能源间接传导",
+          "weight": 0.25,
+          "mean": 0.38,
+          "sd": 0.15,
+          "probability_yes": 0.8069376628580931,
+          "weighted_probability": 0.20173441571452327
+        },
+        {
+          "label": "需求下行",
+          "weight": 0.1,
+          "mean": 0.06,
+          "sd": 0.13,
+          "probability_yes": 0.07193386424080761,
+          "weighted_probability": 0.007193386424080761
+        }
+      ],
+      "reasoning": "2月核心0.2%、住房0.2%；4月7日能源展望上调油价，6月核心存在滞后传导，但能源本身被排除。",
+      "against_yes": "低住房和商品降价可以维持核心不高于0.2%。",
+      "against_no": "间接成本传导或服务粘性可推过0.2%。",
+      "update_reason": "补入截止前能源上行风险，明确核心与总体口径不同。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.54,
+      "price_timestamp": "2026-04-10T14:05:00+00:00",
+      "price_bid": 0.49,
+      "price_ask": 0.59,
+      "price_kind": "开放日UTC日末：最后1分钟收盘买卖报价中点；可能未成交",
+      "quality_flags": [
+        "API首日分钟K线未记录成交",
+        "最后价格更新距日末超过60分钟"
+      ],
+      "settled_at": "2026-07-14T13:46:09.485872Z",
+      "underlying_event": "CPI_RELEASE_2026-06",
+      "opening_day_traded_volume": 0.0,
+      "endday_price_age_minutes": 594.9833333333333,
+      "losses": {
+        "round1_probability": 0.09519541280308992,
+        "round2_probability": 0.23720656098960596,
+        "market_probability": 0.2916
+      }
+    },
+    {
+      "exam_id": "K04",
+      "platform": "Kalshi",
+      "market_id": "KXCPICORE-26JUL-T0.4",
+      "question": "2026年7月核心 CPI 环比高于0.4%？",
+      "cluster": "CORE-2026-07",
+      "information_cutoff": "2026-05-12T00:00:00Z",
+      "rules": "If the seasonally adjusted Consumer Price Index for All Urban Consumers: All Items less Food and Energy for July 2026, as published by the Bureau of Labor Statistics, increases by above 0.4%, then the market resolves to Yes.\nPlease note that the value of the Underlying is the single-decimal value reported by the BLS.\n\nIn the case of a delay in data caused by a federal government shutdown impacting the reliability of the Source Agency, the market’s latest Expiration Date will be extended to the sooner of the release of the Underlying or six months after the end of the government shutdown.",
+      "url": "https://kalshi.com/markets/kxcpicore/kxcpicore-26jul",
+      "latent_lower": 0.45,
+      "latent_upper": null,
+      "round1_probability": 0.006209665325776159,
+      "round2_probability": 0.1045179015733749,
+      "delta": 0.09830823624759874,
+      "sources": [
+        {
+          "id": "cpi_mar",
+          "url": "https://www.bls.gov/news.release/archives/cpi_04102026.htm",
+          "published_on": "2026-04-10",
+          "available_at": "2026-04-10T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "3月总体0.9%、核心0.2%；能源10.9%、汽油21.2%，汽油贡献约四分之三总体涨幅。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "steo_apr",
+          "url": "https://www.eia.gov/outlooks/steo/archives/apr26.pdf",
+          "published_on": "2026-04-07",
+          "available_at": "2026-04-07T16:15:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "能源供应冲击下，上调2026年Brent均价预测至96美元，较上版79美元上升；这是预测而不是实现值。",
+          "timestamp_basis": "报告确认发布日期；按官方通常12:00—12:15美东发布时间窗口的末端推定，非当日秒级发布证明。"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          0.2,
+          0.3,
+          0.2,
+          0.2
+        ],
+        "n": 4,
+        "hits": 0,
+        "empirical_rate": 0.0,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "温和核心",
+          "weight": 0.65,
+          "mean": 0.23,
+          "sd": 0.12,
+          "probability_yes": 0.03337650758481725,
+          "weighted_probability": 0.021694729930131215
+        },
+        {
+          "label": "成本传导较强",
+          "weight": 0.25,
+          "mean": 0.38,
+          "sd": 0.16,
+          "probability_yes": 0.3308743880408792,
+          "weighted_probability": 0.0827185970102198
+        },
+        {
+          "label": "弱需求",
+          "weight": 0.1,
+          "mean": 0.05,
+          "sd": 0.13,
+          "probability_yes": 0.0010457463302387948,
+          "weighted_probability": 0.00010457463302387948
+        }
+      ],
+      "reasoning": "3月总体0.9%主要由汽油驱动，核心仍0.2%；目标7月，滞后传导可能提高尾部，但不直接照搬总体。",
+      "against_yes": "0.4%以上要求公布至少0.5%，远高于近期核心。",
+      "against_no": "长期能源成本传导可能提高核心上尾。",
+      "update_reason": "增大中期上尾风险，第一轮0.6%事件概率过度依赖sigma0.1。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.13,
+      "price_timestamp": "2026-05-12T23:17:00+00:00",
+      "price_bid": 0.11,
+      "price_ask": 0.15,
+      "price_kind": "开放日UTC日末：最后1分钟收盘买卖报价中点；可能未成交",
+      "quality_flags": [
+        "API首日分钟K线未记录成交"
+      ],
+      "settled_at": "2026-08-12T13:56:19.058679Z",
+      "underlying_event": "CPI_RELEASE_2026-07",
+      "opening_day_traded_volume": 0.0,
+      "endday_price_age_minutes": 42.983333333333334,
+      "losses": {
+        "round1_probability": 3.855994345814673e-05,
+        "round2_probability": 0.010923991749301684,
+        "market_probability": 0.016900000000000002
+      }
+    },
+    {
+      "exam_id": "K05",
+      "platform": "Kalshi",
+      "market_id": "KXCPICORE-26AUG-T0.2",
+      "question": "2026年8月核心 CPI 环比高于0.2%？",
+      "cluster": "CORE-2026-08",
+      "information_cutoff": "2026-06-10T00:00:00Z",
+      "rules": "If the seasonally adjusted Consumer Price Index for All Urban Consumers: All Items less Food and Energy for August 2026, as published by the Bureau of Labor Statistics, increases by above 0.2%, then the market resolves to Yes.\nPlease note that the value of the Underlying is the single-decimal value reported by the BLS.\n\nIn the case of a delay in data caused by a federal government shutdown impacting the reliability of the Source Agency, the market’s latest Expiration Date will be extended to the sooner of the release of the Underlying or six months after the end of the government shutdown.",
+      "url": "https://kalshi.com/markets/kxcpicore/kxcpicore-26aug",
+      "latent_lower": 0.25,
+      "latent_upper": null,
+      "round1_probability": 0.9331927987311419,
+      "round2_probability": 0.5442513217398465,
+      "delta": -0.38894147699129544,
+      "sources": [
+        {
+          "id": "cpi_apr",
+          "url": "https://www.bls.gov/news.release/archives/cpi_05122026.htm",
+          "published_on": "2026-05-12",
+          "available_at": "2026-05-12T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "4月总体0.6%、核心0.4%、住房0.6%；能源贡献超过40%；同比3.8%。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "steo_jun",
+          "url": "https://www.eia.gov/outlooks/steo/archives/jun26.pdf",
+          "published_on": "2026-06-09",
+          "available_at": "2026-06-09T16:15:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "预计6、7月Brent约105美元；5月均价107美元，较4月下跌10美元；假设海峡近期开通仍有限，能源涨跌两种路径均可能。",
+          "timestamp_basis": "报告确认发布日期；按官方通常12:00—12:15美东发布时间窗口的末端推定，非当日秒级发布证明。"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          0.2,
+          0.3,
+          0.2,
+          0.2,
+          0.4
+        ],
+        "n": 5,
+        "hits": 2,
+        "empirical_rate": 0.4,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "核心回归正常",
+          "weight": 0.55,
+          "mean": 0.25,
+          "sd": 0.12,
+          "probability_yes": 0.5,
+          "weighted_probability": 0.275
+        },
+        {
+          "label": "住房与传导持续",
+          "weight": 0.3,
+          "mean": 0.4,
+          "sd": 0.15,
+          "probability_yes": 0.841344746068543,
+          "weighted_probability": 0.2524034238205629
+        },
+        {
+          "label": "需求转弱",
+          "weight": 0.15,
+          "mean": 0.08,
+          "sd": 0.14,
+          "probability_yes": 0.11231931946189022,
+          "weighted_probability": 0.016847897919283532
+        }
+      ],
+      "reasoning": "4月核心0.4%、住房0.6%支持高值，但此前多为0.2%；预测8月仍有数月，单月高值不宜得到93%确定性。",
+      "against_yes": "4月住房和核心高值可能回落，且目标期较远。",
+      "against_no": "住房粘性和能源间接传导可使核心高于0.2%。",
+      "update_reason": "降低单月高值锚定、保留传导情景；可解释的大改来自结构假设变化。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 1,
+      "market_probability": 0.69,
+      "price_timestamp": "2026-06-10T23:49:00+00:00",
+      "price_bid": 0.53,
+      "price_ask": 0.85,
+      "price_kind": "开放日UTC日末：最后1分钟收盘买卖报价中点；可能未成交",
+      "quality_flags": [
+        "日末买卖价差超过20pp"
+      ],
+      "settled_at": "2026-09-11T14:41:53.698243Z",
+      "underlying_event": "CPI_RELEASE_2026-08",
+      "opening_day_traded_volume": 43.0,
+      "endday_price_age_minutes": 10.983333333333333,
+      "losses": {
+        "round1_probability": 0.004463202141377714,
+        "round2_probability": 0.20770685773587694,
+        "market_probability": 0.09610000000000003
+      }
+    },
+    {
+      "exam_id": "K06",
+      "platform": "Kalshi",
+      "market_id": "KXPAYROLLS-26JUN-T80000",
+      "question": "2026年6月新增非农高于8万人？",
+      "cluster": "NFP-2026-06",
+      "information_cutoff": "2025-10-13T00:00:00Z",
+      "rules": "If the increase in total non-farm payroll employment is above 80000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of June 2026, then the market resolves to Yes.\nThe market closes at 8:29 AM ET on the expected date of the data release.",
+      "url": "https://kalshi.com/markets/kxpayrolls/kxpayrolls-26jun",
+      "latent_lower": 80000,
+      "latent_upper": null,
+      "round1_probability": 0.2809573088985644,
+      "round2_probability": 0.44724442779495466,
+      "delta": 0.16628711889639025,
+      "sources": [
+        {
+          "id": "jobs_aug25",
+          "url": "https://www.bls.gov/news.release/archives/empsit_09052025.htm",
+          "published_on": "2025-09-05",
+          "available_at": "2025-09-05T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "8月新增22000；6月修订-13000、7月79000；就业自4月以来变化很小，3个月平均约29000。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "jolts_aug25",
+          "url": "https://www.bls.gov/news.release/archives/jolts_09302025.htm",
+          "published_on": "2025-09-30",
+          "available_at": "2025-09-30T14:00:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "8月职位空缺720万；招聘和离职总数均510万，均变化不大；两套调查口径不同，不能直接用差额冒充非农。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "fed_sep25",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm",
+          "published_on": "2025-09-17",
+          "available_at": "2025-09-17T18:00:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "联储降息25bp，区间4.00%—4.25%；政策支持方向不能量化成未来月非农必涨。",
+          "timestamp_basis": "官方发布声明中的时点"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          -13000,
+          79000,
+          22000
+        ],
+        "n": 3,
+        "hits": 0,
+        "empirical_rate": 0.0,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "低招聘延续",
+          "weight": 0.55,
+          "mean": 50000,
+          "sd": 150000,
+          "probability_yes": 0.420740290560897,
+          "weighted_probability": 0.23140715980849338
+        },
+        {
+          "label": "降息后恢复",
+          "weight": 0.3,
+          "mean": 150000,
+          "sd": 160000,
+          "probability_yes": 0.6691256119591207,
+          "weighted_probability": 0.2007376835877362
+        },
+        {
+          "label": "衰退收缩",
+          "weight": 0.15,
+          "mean": -150000,
+          "sd": 180000,
+          "probability_yes": 0.10066389599150072,
+          "weighted_probability": 0.015099584398725108
+        }
+      ],
+      "reasoning": "2025年8月非农和3个月均值偏弱，JOLTS呈低流动；9月降息提供恢复路径。目标在8—10个月后，不能把22000固定外推近一年。",
+      "against_yes": "低招聘、财政与行业减少可使增长持续低于8万。",
+      "against_no": "货币宽松和月度噪声可使非农重新超过8万。",
+      "update_reason": "以就业周期三路径和更长时距表达不确定性；三题同日期共享情景，非三个独立信号。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.31,
+      "price_timestamp": "2025-10-13T23:18:00+00:00",
+      "price_bid": 0.29,
+      "price_ask": 0.33,
+      "price_kind": "开放日UTC日末：最后1分钟收盘买卖报价中点；可能未成交",
+      "quality_flags": [
+        "API首日分钟K线未记录成交"
+      ],
+      "settled_at": "2026-07-02T13:27:54.449499Z",
+      "underlying_event": "NFP-2026-06",
+      "opening_day_traded_volume": 0.0,
+      "endday_price_age_minutes": 41.983333333333334,
+      "losses": {
+        "round1_probability": 0.07893700942352334,
+        "round2_probability": 0.20002757819363642,
+        "market_probability": 0.0961
+      }
+    },
+    {
+      "exam_id": "K07",
+      "platform": "Kalshi",
+      "market_id": "KXPAYROLLS-26JUL-T80000",
+      "question": "2026年7月新增非农高于8万人？",
+      "cluster": "NFP-2026-07",
+      "information_cutoff": "2025-10-13T00:00:00Z",
+      "rules": "If the increase in total non-farm payroll employment is above 80000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of July 2026, then the market resolves to Yes.\nThe market closes at 8:29 AM ET on the expected date of the data release.",
+      "url": "https://kalshi.com/markets/kxpayrolls/kxpayrolls-26jul",
+      "latent_lower": 80000,
+      "latent_upper": null,
+      "round1_probability": 0.2809573088985644,
+      "round2_probability": 0.44869134287631623,
+      "delta": 0.16773403397775183,
+      "sources": [
+        {
+          "id": "jobs_aug25",
+          "url": "https://www.bls.gov/news.release/archives/empsit_09052025.htm",
+          "published_on": "2025-09-05",
+          "available_at": "2025-09-05T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "8月新增22000；6月修订-13000、7月79000；就业自4月以来变化很小，3个月平均约29000。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "jolts_aug25",
+          "url": "https://www.bls.gov/news.release/archives/jolts_09302025.htm",
+          "published_on": "2025-09-30",
+          "available_at": "2025-09-30T14:00:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "8月职位空缺720万；招聘和离职总数均510万，均变化不大；两套调查口径不同，不能直接用差额冒充非农。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "fed_sep25",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm",
+          "published_on": "2025-09-17",
+          "available_at": "2025-09-17T18:00:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "联储降息25bp，区间4.00%—4.25%；政策支持方向不能量化成未来月非农必涨。",
+          "timestamp_basis": "官方发布声明中的时点"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          -13000,
+          79000,
+          22000
+        ],
+        "n": 3,
+        "hits": 0,
+        "empirical_rate": 0.0,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "低招聘延续",
+          "weight": 0.55,
+          "mean": 50000,
+          "sd": 157500.0,
+          "probability_yes": 0.4244679994402739,
+          "weighted_probability": 0.23345739969215068
+        },
+        {
+          "label": "降息后恢复",
+          "weight": 0.3,
+          "mean": 150000,
+          "sd": 168000.0,
+          "probability_yes": 0.6615388804893103,
+          "weighted_probability": 0.1984616641467931
+        },
+        {
+          "label": "衰退收缩",
+          "weight": 0.15,
+          "mean": -150000,
+          "sd": 189000.0,
+          "probability_yes": 0.11181519358248315,
+          "weighted_probability": 0.01677227903737247
+        }
+      ],
+      "reasoning": "2025年8月非农和3个月均值偏弱，JOLTS呈低流动；9月降息提供恢复路径。目标在8—10个月后，不能把22000固定外推近一年。",
+      "against_yes": "低招聘、财政与行业减少可使增长持续低于8万。",
+      "against_no": "货币宽松和月度噪声可使非农重新超过8万。",
+      "update_reason": "以就业周期三路径和更长时距表达不确定性；三题同日期共享情景，非三个独立信号。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.31,
+      "price_timestamp": "2025-10-13T23:18:00+00:00",
+      "price_bid": 0.29,
+      "price_ask": 0.33,
+      "price_kind": "开放日UTC日末：最后1分钟收盘买卖报价中点；可能未成交",
+      "quality_flags": [
+        "API首日分钟K线未记录成交"
+      ],
+      "settled_at": "2026-08-07T13:09:35.466617Z",
+      "underlying_event": "NFP-2026-07",
+      "opening_day_traded_volume": 0.0,
+      "endday_price_age_minutes": 41.983333333333334,
+      "losses": {
+        "round1_probability": 0.07893700942352334,
+        "round2_probability": 0.20132392117215198,
+        "market_probability": 0.0961
+      }
+    },
+    {
+      "exam_id": "K08",
+      "platform": "Kalshi",
+      "market_id": "KXPAYROLLS-26AUG-T80000",
+      "question": "2026年8月新增非农高于8万人？",
+      "cluster": "NFP-2026-08",
+      "information_cutoff": "2025-10-13T00:00:00Z",
+      "rules": "If the increase in total non-farm payroll employment is above 80000 as reported by the Bureau of Labor Statistics Monthly Employment Situation Report for the month of August 2026, then the market resolves to Yes.\nThe market closes at 8:29 AM ET on the expected date of the data release.",
+      "url": "https://kalshi.com/markets/kxpayrolls/kxpayrolls-26aug",
+      "latent_lower": 80000,
+      "latent_upper": null,
+      "round1_probability": 0.2809573088985644,
+      "round2_probability": 0.4501041605377125,
+      "delta": 0.1691468516391481,
+      "sources": [
+        {
+          "id": "jobs_aug25",
+          "url": "https://www.bls.gov/news.release/archives/empsit_09052025.htm",
+          "published_on": "2025-09-05",
+          "available_at": "2025-09-05T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "8月新增22000；6月修订-13000、7月79000；就业自4月以来变化很小，3个月平均约29000。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "jolts_aug25",
+          "url": "https://www.bls.gov/news.release/archives/jolts_09302025.htm",
+          "published_on": "2025-09-30",
+          "available_at": "2025-09-30T14:00:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "8月职位空缺720万；招聘和离职总数均510万，均变化不大；两套调查口径不同，不能直接用差额冒充非农。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "fed_sep25",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250917a.htm",
+          "published_on": "2025-09-17",
+          "available_at": "2025-09-17T18:00:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "联储降息25bp，区间4.00%—4.25%；政策支持方向不能量化成未来月非农必涨。",
+          "timestamp_basis": "官方发布声明中的时点"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          -13000,
+          79000,
+          22000
+        ],
+        "n": 3,
+        "hits": 0,
+        "empirical_rate": 0.0,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "低招聘延续",
+          "weight": 0.55,
+          "mean": 50000,
+          "sd": 165000.0,
+          "probability_yes": 0.42786270766003587,
+          "weighted_probability": 0.23532448921301974
+        },
+        {
+          "label": "降息后恢复",
+          "weight": 0.3,
+          "mean": 150000,
+          "sd": 176000.0,
+          "probability_yes": 0.6545843841800829,
+          "weighted_probability": 0.19637531525402488
+        },
+        {
+          "label": "衰退收缩",
+          "weight": 0.15,
+          "mean": -150000,
+          "sd": 198000.00000000003,
+          "probability_yes": 0.12269570713778599,
+          "weighted_probability": 0.0184043560706679
+        }
+      ],
+      "reasoning": "2025年8月非农和3个月均值偏弱，JOLTS呈低流动；9月降息提供恢复路径。目标在8—10个月后，不能把22000固定外推近一年。",
+      "against_yes": "低招聘、财政与行业减少可使增长持续低于8万。",
+      "against_no": "货币宽松和月度噪声可使非农重新超过8万。",
+      "update_reason": "以就业周期三路径和更长时距表达不确定性；三题同日期共享情景，非三个独立信号。",
+      "fermi": "价格或就业贡献适合加权相加，不把边际概率直接相乘。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 1,
+      "market_probability": 0.32,
+      "price_timestamp": "2025-10-13T23:18:00+00:00",
+      "price_bid": 0.3,
+      "price_ask": 0.34,
+      "price_kind": "开放日UTC日末：最后1分钟收盘买卖报价中点；可能未成交",
+      "quality_flags": [
+        "API首日分钟K线未记录成交"
+      ],
+      "settled_at": "2026-09-04T13:04:40.657122Z",
+      "underlying_event": "NFP-2026-08",
+      "opening_day_traded_volume": 0.0,
+      "endday_price_age_minutes": 41.983333333333334,
+      "losses": {
+        "round1_probability": 0.5170223916263945,
+        "round2_probability": 0.30238543425793385,
+        "market_probability": 0.4623999999999999
+      }
+    },
+    {
+      "exam_id": "K09",
+      "platform": "Kalshi",
+      "market_id": "KXGDP-26JUL30-T2.0",
+      "question": "2026年第二季实际 GDP 增长高于2.0%？",
+      "cluster": "GDP-2026-Q2",
+      "information_cutoff": "2026-03-24T00:00:00Z",
+      "rules": "If real GDP (as measured by the BEA’s seasonally adjusted and annualized Advance Estimate) increases by more than 2.0, then the market resolves to Yes.\nThe market will close at 8:29 AM on the day of the expected release of the data. The market will expire at the first 10:00 AM following the release of the data for Q2 2026, or 3 months following that expected date of data release. Please note the Expiration Value is the one-decimal value published by the BEA.",
+      "url": "https://kalshi.com/markets/kxgdp/kxgdp-26jul30",
+      "latent_lower": 2.05,
+      "latent_upper": null,
+      "round1_probability": 0.24983788247177707,
+      "round2_probability": 0.39036302855534144,
+      "delta": 0.14052514608356437,
+      "sources": [
+        {
+          "id": "gdp_second",
+          "url": "https://www.bea.gov/sites/default/files/2026-03/gdp4q25-2nd.pdf",
+          "published_on": "2026-03-13",
+          "available_at": "2026-03-13T12:30:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "2025Q4实际GDP年化0.7%，私人国内最终销售1.9%；政府支出和出口拖累，私人需求强于总体。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "sep_mar26",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260318.htm",
+          "published_on": "2026-03-18",
+          "available_at": "2026-03-18T18:00:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "2026全年Q4/Q4 GDP增长中位数2.4%；14位认为风险偏下行，15位认为不确定性偏高；全年口径不等于某一季度SAAR。",
+          "timestamp_basis": "官方发布声明中的时点"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "截止时已可见的同口径历史月值/季值（仅小样本参考）",
+        "values": [
+          4.4,
+          0.7
+        ],
+        "n": 2,
+        "hits": 1,
+        "empirical_rate": 0.5,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "私人需求维持",
+          "weight": 0.5,
+          "mean": 1.8,
+          "sd": 1.6,
+          "probability_yes": 0.43791798319170516,
+          "weighted_probability": 0.21895899159585258
+        },
+        {
+          "label": "下行冲击",
+          "weight": 0.35,
+          "mean": 0,
+          "sd": 2.0,
+          "probability_yes": 0.1526815938331103,
+          "weighted_probability": 0.0534385578415886
+        },
+        {
+          "label": "增长反弹",
+          "weight": 0.15,
+          "mean": 3.4,
+          "sd": 1.7,
+          "probability_yes": 0.7864365274526682,
+          "weighted_probability": 0.11796547911790023
+        }
+      ],
+      "reasoning": "Q4 GDP0.7%但私人最终需求1.9%，联储全年增长预测2.4%；14位指下行风险，不能把全年预测照搬Q2，也不能只延续Q4。",
+      "against_yes": "弱政府和出口、下行风险可能使Q2低于2%。",
+      "against_no": "私人需求比总体强、暂时拖累消退可使增长超过2%。",
+      "update_reason": "从上季总值改为私人需求和风险情景，避免误把年度GDP中位数当季度参数。",
+      "fermi": "GDP贡献相加；这里仅用情景，未完整计算支出贡献。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.485,
+      "price_timestamp": "2026-03-24T19:00:00+00:00",
+      "price_bid": 0.46,
+      "price_ask": 0.51,
+      "price_kind": "开放日UTC日末：最后1分钟收盘买卖报价中点；可能未成交",
+      "quality_flags": [
+        "最后价格更新距日末超过60分钟"
+      ],
+      "settled_at": "2026-07-30T13:14:20.934978Z",
+      "underlying_event": "GDP-2026-Q2",
+      "opening_day_traded_volume": 13.0,
+      "endday_price_age_minutes": 299.98333333333335,
+      "losses": {
+        "round1_probability": 0.0624189675179815,
+        "round2_probability": 0.15238329406289833,
+        "market_probability": 0.235225
+      }
+    },
+    {
+      "exam_id": "K10",
+      "platform": "Kalshi",
+      "market_id": "KXFED-26JUL-T3.75",
+      "question": "2026年7月会议后联邦基金利率上限高于3.75%？",
+      "cluster": "FED-2026-07",
+      "information_cutoff": "2025-08-06T00:00:00Z",
+      "rules": "If the upper bound of the target federal funds rate published on the Federal Reserve's official website is greater than 3.75% following the Federal Reserve's Jul 29, 2026 meeting, then the market resolves to Yes.\nThis market will expire the first 2:05 PM ET following the release of a Federal Reserve statement for their Jul 29, 2026 meeting or one week following the last day of that meeting.",
+      "url": "https://kalshi.com/markets/kxfed/kxfed-26jul",
+      "latent_lower": 3.875,
+      "latent_upper": null,
+      "round1_probability": 0.420740290560897,
+      "round2_probability": 0.5495,
+      "delta": 0.12875970943910298,
+      "sources": [
+        {
+          "id": "sep_jun25",
+          "url": "https://www.federalreserve.gov/monetarypolicy/files/fomcprojtabl20250618.pdf",
+          "published_on": "2025-06-18",
+          "available_at": "2025-06-18T18:00:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "2026年末利率中点中位数3.6%，2025年末3.9%；这些是政策适宜性判断、年末中点，不是2026年7月会议上限的概率分布。",
+          "timestamp_basis": "官方发布声明中的时点"
+        },
+        {
+          "id": "fed_jul25",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250730a.htm",
+          "published_on": "2025-07-30",
+          "available_at": "2025-07-30T18:00:00Z",
+          "accessed_at": "2026-10-10T15:12:44.418990+00:00",
+          "claim": "目标区间4.25%—4.50%；两位反对者倾向降25bp。",
+          "timestamp_basis": "官方发布声明中的时点"
+        }
+      ],
+      "outside_view": {
+        "reference_class": "政策路径的定性外部视角；未建立可用的同类会议频率样本",
+        "values": [],
+        "n": 0,
+        "hits": 0,
+        "empirical_rate": null,
+        "note": "小样本参考，不当作稳定总体概率；缺少可比资料时不捏造基准率。"
+      },
+      "scenarios": [
+        {
+          "label": "软着陆",
+          "weight": 0.6,
+          "conditional_yes": 0.65,
+          "probability_yes": 0.65,
+          "weighted_probability": 0.39
+        },
+        {
+          "label": "衰退加快降息",
+          "weight": 0.25,
+          "conditional_yes": 0.08,
+          "probability_yes": 0.08,
+          "weighted_probability": 0.02
+        },
+        {
+          "label": "粘性通胀慢降息",
+          "weight": 0.15,
+          "conditional_yes": 0.93,
+          "probability_yes": 0.93,
+          "weighted_probability": 0.1395
+        }
+      ],
+      "reasoning": "当前上限4.50%；累计至多两次25bp降息才仍高于3.75%。June SEP是2026年末中点3.6%，而题目为2026年7月上限，需政策路径条件树。",
+      "against_yes": "两位委员已主张降息；衰退或提前多次降息会使上限降到3.75%或以下。",
+      "against_no": "当前利率距阈值75bp；7月早于年末，缓慢降息路径仍可能高于阈值。",
+      "update_reason": "修正SEP年末中点与7月上限混用，参数为主观情景概率，并非点阵图投票频率。",
+      "fermi": "P(YES)=ΣP(宏观路径)×P(累计至多两次25bp净降息|该路径)；是条件全概率，不假定事件独立。",
+      "change_conditions": "只有在该题截止日前可见的新版本、分项或政策事实才可改判断；不按答案、市场价或本轮分数调参。",
+      "result": 0,
+      "market_probability": 0.42000000000000004,
+      "price_timestamp": "2025-08-06T23:52:00+00:00",
+      "price_bid": 0.38,
+      "price_ask": 0.46,
+      "price_kind": "开放日UTC日末：最后1分钟收盘买卖报价中点；可能未成交",
+      "quality_flags": [],
+      "settled_at": "2026-07-29T18:12:26.017617Z",
+      "underlying_event": "FED-2026-07",
+      "opening_day_traded_volume": 100.0,
+      "endday_price_age_minutes": 7.983333333333333,
+      "losses": {
+        "round1_probability": 0.17702239210126805,
+        "round2_probability": 0.30195025,
+        "market_probability": 0.17640000000000003
+      }
+    }
+  ]
+}
